@@ -1,3 +1,6 @@
 /* For Repeated values : fonts, breakpoints and colors*/
+body {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=application.css.map */
