@@ -1,0 +1,35 @@
+.nav {
+
+  list-style: none;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: black;
+  font-weight: lighter;
+  a, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover {
+    background-color: $bright-turquoise;
+    color: white;
+    padding: 15px;
+    border-radius: 5%;
+  }
+  &__item {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+  }
+}
+// Navgigation logo
+.grid__col--3{
+  margin: 0 auto;
+  padding: 30px ;
+  margin-bottom: 20px;
+}
+
+//para in navi
+.grid__col--12 p {
+  @include font-styling(1.8em, lighter, 1em);
+}

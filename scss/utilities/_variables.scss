@@ -3,6 +3,10 @@
 
 //FONTS
 
+$font-primary: 'Raleway', sans-serif;
+$font-color-main: black;
+$font-color-main-light: lighten(black, 40%);
+
 //BREAKPOINTS
 $break-mobile:'(min-width: 480px)';
 $break-desktop: '(min-width: 1024px)';

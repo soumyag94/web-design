@@ -1,1 +1,15 @@
-// mixins for media queries, flex box setttings, BEM selectos 
+// mixins for media queries, flex box setttings, BEM selectos
+
+@mixin flexbox($dir, $wrap, $just,$align:none) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-content: $align;
+}
+
+@mixin font-styling($l-h:none, $font-w:none, $font-s:none){
+  line-height: $l-h;
+  font-weight: $font-w;
+  font-size: $font-s;
+}

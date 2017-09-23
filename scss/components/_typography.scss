@@ -1,0 +1,26 @@
+.grid__col--8  {
+  @include font-styling(1.8em, lighter, 1em);
+blockquote{
+  @include font-styling(1.5em, bold, 1.2em);
+  font-style: italic;
+  border-left: solid 20px $bright-turquoise;
+  margin: 40px 0px;
+  padding-left: 10px;
+  color: $font-color-main-light;
+}
+a, a:visited {
+  @include font-styling($font-w: 500);
+  text-decoration: none;
+  color: $aqua;
+}
+}
+
+.headline--secondary {
+  @include font-styling($font-w: 200);
+}
+.headline--primary {
+  @include font-styling(1.3em, 600);
+  color: $bright-turquoise;
+  padding-bottom: 25px;
+  margin-left: 20px;
+}
