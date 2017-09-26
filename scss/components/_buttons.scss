@@ -1,0 +1,23 @@
+
+.btn {
+  &--default {
+  @extend .btn;
+  background-color: $aqua;
+  }
+  &--success {
+  @extend .btn;
+  background-color: $emerald;
+  }
+  &--error {
+  @extend .btn;
+  background-color: $geraldine;
+  }
+  &--warning {
+  @extend .btn;
+  background-color: $vivd-tangerine;
+  }
+  &--info {
+  @extend .btn;
+  background-color: $heliotope-purple;
+  }
+}

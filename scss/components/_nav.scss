@@ -1,25 +1,19 @@
 .nav {
-
-  list-style: none;
-  padding: 10px;
-  font-size: 1.5em;
-  margin: 0 auto;
-  color: black;
-  font-weight: lighter;
-  a, a:visited {
-    text-decoration: none;
-    color: inherit;
-  }
-  a:hover {
-    background-color: $bright-turquoise;
-    color: white;
-    padding: 15px;
-    border-radius: 5%;
-  }
+@extend %nav;
   &__item {
     text-align: center;
     margin: 20px;
     padding: 5px;
+    a, a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      background-color: $bright-turquoise;
+      color: white;
+      padding: 15px;
+      border-radius: 5%;
+    }
   }
 }
 // Navgigation logo

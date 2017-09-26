@@ -1,4 +1,24 @@
 /* For Repeated values : fonts, breakpoints and colors*/
+.btn, .grid__col--12, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  line-height: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 15px 0; }
+  .btn::first-letter, .grid__col--12::first-letter, .btn--default::first-letter, .btn--success::first-letter, .btn--error::first-letter, .btn--warning::first-letter, .btn--info::first-letter {
+    text-transform: capitalize; }
+
+.nav {
+  list-style: none;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: black;
+  font-weight: lighter; }
+
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box; }
@@ -14,25 +34,46 @@ body {
   justify-content: flex-start;
   align-content: none; }
 
-.nav {
-  list-style: none;
-  padding: 10px;
-  font-size: 1.5em;
-  margin: 0 auto;
-  color: black;
-  font-weight: lighter; }
-  .nav a, .nav a:visited {
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: none; }
+
+.grid__col--12 {
+  background-color: #5CDA79; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start; }
+  .form__input {
+    line-height: 30px;
+    font-weight: lighter;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid 10px #00EDC4;
+    padding: 12px; }
+  .form__label--hidden {
+    display: none; }
+  .form__input:focus {
+    box-shadow: 0; }
+
+.nav__item {
+  text-align: center;
+  margin: 20px;
+  padding: 5px; }
+  .nav__item a, .nav__item a:visited {
     text-decoration: none;
     color: inherit; }
-  .nav a:hover {
+  .nav__item a:hover {
     background-color: #00EDC4;
     color: white;
     padding: 15px;
     border-radius: 5%; }
-  .nav__item {
-    text-align: center;
-    margin: 20px;
-    padding: 5px; }
 
 .grid__col--3 {
   margin: 0 auto;
@@ -43,6 +84,17 @@ body {
   line-height: 1.8em;
   font-weight: lighter;
   font-size: 1em; }
+
+.btn--default {
+  background-color: #00E2FF; }
+.btn--success {
+  background-color: #5ACD90; }
+.btn--error {
+  background-color: #FF808D; }
+.btn--warning {
+  background-color: #FF9276; }
+.btn--info {
+  background-color: #C88CFF; }
 
 .grid__col--8 {
   line-height: 1.8em;

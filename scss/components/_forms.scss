@@ -1,0 +1,15 @@
+.form {
+  @include flexbox(column, wrap, space-around,flex-start);
+  &__input {
+    @include font-styling(30px, lighter, $font-s:15px);
+  border: none;
+  border-bottom: solid 10px $bright-turquoise;
+  padding: 12px;
+}
+&__label--hidden {
+  display:none;
+}
+&__input:focus {
+  box-shadow: 0;
+}
+}

@@ -2,3 +2,13 @@
 .grid__row {
     @include flexbox(column, wrap, flex-start);
 }
+.grid {
+  @include flexbox(column, wrap, flex-start);
+}
+
+.grid__col {
+  &--12{
+  @extend .btn;
+  background-color: $pastel-green-12;
+}
+}
